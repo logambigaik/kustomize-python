@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stackdemo-deploy
+  namespace: dev
+  labels:
+    app: stackdemo-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stackdemo-template
+  template:
+    metadata:
+      labels:
+        app: stackdemo-template
+    spec:
+      containers:
+      - name: stackdemo-container
+        image:  klogambigai/awslinux-python:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
