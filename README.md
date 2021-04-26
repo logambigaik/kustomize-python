@@ -39,6 +39,16 @@
 
 ![image](https://user-images.githubusercontent.com/54719289/116159371-05829700-a6e8-11eb-9c1d-f6ce2c5121bf.png)
 
+
+![image](https://user-images.githubusercontent.com/54719289/116161400-9b6bf100-a6eb-11eb-80a8-612801c0644d.png)
+
+                kubectl apply -f service.yml
+                kubectl get svc -n dev
+
+![image](https://user-images.githubusercontent.com/54719289/116161354-898a4e00-a6eb-11eb-9567-d6c74601a525.png)   but unable to check the UI....COnfirm this logic ..
+Is it possible to update service port with kustomization
+
+
         
         
 
