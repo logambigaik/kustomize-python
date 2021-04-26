@@ -1,0 +1,11 @@
+kind: Deployment
+metadata:
+  name: stackdemo-deploy
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: python-app-container
+          ports:
+          - containerPort: 8000
